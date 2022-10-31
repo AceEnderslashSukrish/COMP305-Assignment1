@@ -1,0 +1,1 @@
+Make a treadmill skybox that rotates and is a child of main camera as well
