@@ -50,7 +50,9 @@ public class PlayerController : MonoBehaviour
 
         rBody.velocity = new Vector2(horiz * speed, rBody.velocity.y);
 
-        anim.SetFloat("xSpeed", rBody.velocity.x);
+        anim.SetFloat("xSpeed", Mathf.Abs(rBody.velocity.x));
+        anim.SetFloat("ySpeed", rBody.velocity.y);
+        anim.SetBool("isGrounded", isGrounded);
     }
 
     private bool GroundCheck()
